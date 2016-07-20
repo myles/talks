@@ -1,0 +1,215 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd"></p>
+
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Apache CouchDB Talk @ OGLF09</title>
+	<meta name="author" content="Myles Braithwaite">
+	<style type="text/css" media="screen">
+		body { font-size: 1.8em; font-family: "Helvetica Neue", Arial, Helvetica, sans-serif; }
+		h1 { margin-top: 0; text-align: center; }
+		h1 a { color: #000; }
+		a { color: #009; text-decoration: none; }
+		em { font-weight: lighter; }
+		p { width: 800px; margin: .5em auto; }
+		p.slide { border: 1px solid #ccc; padding: 1px; }
+	</style>
+</head>
+<body>
+	<h1 id="apache_couchdb_oglf09">Apache CouchDB @ OGLF09</h1>
+	<p>
+		These are the slides from <a href="http://2009.onlinux.ca/node/141">my</a> <a href="http://onlinux.ca">Ontario [GNU] Linux Fest</a> <a href="http://2009.onlinux.ca/">2009</a> <a href="http://2009.onlinux.ca/node/142">talk on <strong>Apache CouchDB</strong></a>. You can download the <a href="http://s3.mylesbraithwaite.com/presentations/oglf/2009/CouchDB.pdf">PDF</a> or see the <a href="http://slideshare.net/mylesb/apache-couchdb-talk-at-ontario-gnu-linux-fest">Slideshare</a>.
+	</p>
+	
+	<p class="slide"><img src="slide.001.png" width="800" height="600" alt="Apache CouchDB"></p>
+	<p class="slide"><img src="slide.002.png" width="800" height="600" alt="Who am I?"></p>
+	<p class="slide"><img src="slide.003.png" width="800" height="600" alt="Monkey in your Soul"></p>
+	<p class="slide"><img src="slide.004.png" width="800" height="600" alt="What is CouchDB?"></p>
+	<p class="slide"><img src="slide.005.png" width="800" height="600" alt="Document-Oriented Database"></p>
+	<p class="slide"><img src="slide.006.png" width="800" height="600" alt="No Rows or Columns"></p>
+	<p class="slide"><img src="slide.007.png" width="800" height="600" alt="But"></p>
+	<p class="slide"><img src="slide.008.png" width="800" height="600" alt="Collection of JSON Doucments"></p>
+	<p class="slide"><img src="slide.009.png" width="800" height="600" alt="This is know as Schema-Free"></p>
+	<p class="slide">
+		<img src="slide.010.png" width="800" height="600" alt="Example of a JSON document."><br>
+		This is an example of a <a href="http://en.wikipedia.org/wiki/JSON">JSON</a> document.
+	</p>
+	<p class="slide">
+		<img src="slide.011.png" width="800" height="600" alt="Same example as above but with XML."><br>
+		This is the same example as before but formated in XML.
+	</p>
+	<p class="slide"><img src="slide.012.png" width="800" height="600" alt="Data types"></p>
+	<p class="slide">
+		<img src="slide.013.png" width="800" height="600" alt="JSON Data types"><br>
+		JSON has the same basic data types as JavaScript.
+	</p>
+	<p class="slide"><img src="slide.014.png" width="800" height="600" alt="HTTP RESTFul API"></p>
+	<p class="slide"><img src="slide.015.png" width="800" height="600" alt="Quote from Jacob Kaplan-Moss"></p>
+	<p class="slide">
+		<img src="slide.016.png" width="800" height="600" alt="RFC 2616"><br>
+		<a href="http://bit.ly/rfc2616">RFC 2616</a>
+	</p>
+	<p class="slide"><img src="slide.017.png" width="800" height="600" alt="REST"></p>
+	<p class="slide"><img src="slide.018.png" width="800" height="600" alt="Low level XML-RPC and SOAP"></p>
+	<p class="slide">
+		<img src="slide.019.png" width="800" height="600" alt="Basic HTTP Methods."><br>
+		<a href="http://bit.ly/rfc2616-sec9">RFC 2616 Section 9</a>
+	</p>
+	<p class="slide">
+		<img src="slide.020.png" width="800" height="600" alt="Basic HTTP Response Codes."><br>
+		<a href="http://bit.ly/rfc2616-sec10">RFC 2616 Section 10</a>
+	</p>
+	<p class="slide"><img src="slide.021.png" width="800" height="600" alt="Views"></p>
+	<p class="slide"><img src="slide.022.png" width="800" height="600" alt="Aggregation and Reporting on Documents"></p>
+	<p class="slide"><img src="slide.023.png" width="800" height="600" alt="But how do you aggreate non-structured data?"></p>
+	<p class="slide"><img src="slide.024.png" width="800" height="600" alt="Instead of using SQL"></p>
+	<p class="slide"><img src="slide.025.png" width="800" height="600" alt="JavaScript"></p>
+	<p class="slide"><img src="slide.026.png" width="800" height="600" alt="Distributed"></p>
+	<p class="slide"><img src="slide.027.png" width="800" height="600" alt="Using Replication"></p>
+	<p class="slide"><img src="slide.028.png" width="800" height="600" alt="You have your database."></p>
+	<p class="slide"><img src="slide.029.png" width="800" height="600" alt="You"></p>
+	<p class="slide"><img src="slide.030.png" width="800" height="600" alt="You want to share."></p>
+	<p class="slide"><img src="slide.031.png" width="800" height="600" alt="You and your Friend"></p>
+	<p class="slide">
+		<img src="slide.032.png" width="800" height="600" alt="Full control"><br>
+		Now you Friend has full control of the data on his instance of CouchDB.
+	</p>
+	<p class="slide"><img src="slide.033.png" width="800" height="600" alt="Bi-Directional Changes"></p>
+	<p class="slide">
+		<img src="slide.034.png" width="800" height="600" alt="You and your Friend"><br>
+		You Fiends can replicate his changes back to you.
+	</p>
+	<p class="slide">
+		<img src="slide.035.png" width="800" height="600" alt="Mutiple Nodes"><br>
+		This can work on large scale distribution as while.
+	</p>
+	<p class="slide"><img src="slide.036.png" width="800" height="600" alt="Built in Conflict Detection"></p>
+	<p class="slide"><img src="slide.037.png" width="800" height="600" alt="Using the API"></p>
+	<p class="slide"><img src="slide.038.png" width="800" height="600" alt="Database"></p>
+	<p class="slide">
+		<img src="slide.039.png" width="800" height="600" alt="Create a Database"><br>
+		We are calling the <code>PUT</code> method to our new database name.
+	</p>
+	<p class="slide">
+		<img src="slide.040.png" width="800" height="600" alt="Response"><br>
+		And if everything is okay we will receive a <code>201 Created</code> response
+		and some JSON of <code>{"ok":true}</code>.
+	</p>
+	<p class="slide">
+		<img src="slide.041.png" width="800" height="600" alt="Duplicate Error"><br>
+		If we try an create a database that already exists on the system we get a
+		<code>412 Precondition Failed</code>.
+	</p>
+	<p class="slide">
+		<img src="slide.043.png" width="800" height="600" alt="Delete a Database"><br>
+		We are calling the <code>DELETE</code> method to out database to remove the
+		database from the CouchDB node.
+	</p>
+	<p class="slide">
+		<img src="slide.044.png" width="800" height="600" alt="Response"><br>
+		And because the database exists we get back a <code>200 OK</code> response.
+	</p>
+	<p class="slide">
+		<img src="slide.045.png" width="800" height="600" alt="Fetching all Rows"><br>
+		Using the <code>GET</code> method...
+	</p>
+	<p class="slide">
+		<img src="slide.046.png" width="800" height="600" alt="Response"><br>
+		We receive a JSON of all the documents in the Database and a <code>200 OK</code>
+		response.
+	</p>
+	<p class="slide">
+		<img src="slide.047.png" width="800" height="600" alt="JSON Response"><br>
+		Here is the JSON in pretty print.
+	</p>
+	<p class="slide"><img src="slide.048.png" width="800" height="600" alt="Document"></p>
+	<p class="slide">
+		<img src="slide.049.png" width="800" height="600" alt="Creating a Document"><br>
+		To create a document in the database we need to use the <code>POST</code> method
+		and include some data...
+	</p>
+	<p class="slide">
+		<img src="slide.050.png" width="800" height="600" alt="Response"><br>
+		We then get a <code>201 Created</code> response and a JSON document that contains
+		the <code>id</code> and <code>rev</code> (reversion) of the newly created document.
+	</p>
+	<p class="slide">
+		<img src="slide.052.png" width="800" height="600" alt="Get a Document"><br>
+		We use the <code>GET</code> method and include the document <code>id</code>...
+	</p>
+	<p class="slide">
+		<img src="slide.053.png" width="800" height="600" alt="Response"><br>
+		and get back a response of <code>200 OK</code> and a JSON document. Note the HTTP
+		header <code>Etag</code>, this is here so if you wanted to setup a proxy in front
+		of a cluster of CouchDB nodes.
+	</p>
+	<p class="slide">
+		<img src="slide.054.png" width="800" height="600" alt="JSON Document"><br>
+		This is the same JSON document as above in pretty print.
+	</p>
+	<p class="slide">
+		<img src="slide.055.png" width="800" height="600" alt="Update a Document"><br>
+		To update a document we use the method <code>PUT</code> and include the current
+		document with our appended changes.
+	</p>
+	<p class="slide"><img src="slide.056.png" width="800" height="600" alt="Our append changes."></p>
+	<p class="slide"><img src="slide.057.png" width="800" height="600" alt="Request"></p>
+	<p class="slide">
+		<img src="slide.058.png" width="800" height="600" alt="Response"><br>
+		Notice the <code>rev</code> has gone up by one.
+	</p>
+	<p class="slide"><img src="slide.059.png" width="800" height="600" alt="Attaching a File to a Document"></p>
+	<p class="slide"><img src="slide.060.png" width="800" height="600" alt="Response"></p>
+	<p class="slide"><img src="slide.061.png" width="800" height="600" alt="Looking up the attachment."></p>
+	<p class="slide"><img src="slide.062.png" width="800" height="600" alt="This is the attachment."></p>
+	<p class="slide"><img src="slide.063.png" width="800" height="600" alt="Copy a Document"></p>
+	<p class="slide"><img src="slide.064.png" width="800" height="600" alt="Response"></p>
+	<p class="slide"><img src="slide.065.png" width="800" height="600" alt="Delete a Document"></p>
+	<p class="slide"><img src="slide.066.png" width="800" height="600" alt="Response"></p>
+	<p class="slide"><img src="slide.068.png" width="800" height="600" alt="Libraries"></p>
+	<p class="slide">
+		<img src="slide.069.png" width="800" height="600" alt="Python"><br>
+		<strong><a href="http://code.google.com/p/couchdb-python">couchdb-python</a></strong>, <a href="http://couchdbkit.org/">CouchKit</a>, and <a href="http://mikeal.github.com/couchquery/">CouchQuery</a>.
+	</p>
+	<p class="slide">
+		<img src="slide.070.png" width="800" height="600" alt="Ruby"><br>
+		<a href="http://github.com/jchris/couchrest">CouchRest</a>.
+	</p>
+	<p class="slide">
+		<img src="slide.071.png" width="800" height="600" alt="Erlang"><br>
+		<a href="http://bitbucket.org/benoitc/couchbeam/">CouchBeam</a>.
+	</p>
+	<p class="slide"><img src="slide.072.png" width="800" height="600" alt="Java"><br>
+		<a href="http://code.google.com/p/couchdb4j/">CouchDB4J</a>.
+	</p>
+	<p class="slide"><img src="slide.073.png" width="800" height="600" alt="I have created a Library in an afternoon."></p>
+	<p class="slide"><img src="slide.074.png" width="800" height="600" alt="Source Code"></p>
+	<p class="slide"><img src="slide.075.png" width="800" height="600" alt="Just sky of 300 lines."></p>
+	<p class="slide">
+		<img src="slide.076.png" width="800" height="600" alt="Use your builtin modules."><br>
+		If you are going to build your own library all you really need is your language's
+		HTTP module (<code>httplib</code>, <code>Net::HTTP</code>,
+		<code>java.net.HttpUrlConnection</code>, and <code>net/http</code>) and a third
+		party JSON dumper.
+	</p>
+	<p class="slide">
+		<img src="slide.077.png" width="800" height="600" alt="Mozilla Raindrop"><br>
+		<strong>Mozilla Raindrop</strong> is an exciting new messaging platform developed
+		by the Thunderbird team. Not only does it use CouchDB as a database but also
+		uses the built in HTTP server for the client. Using a technique called CouchApp,
+		you can build HTML/JavaScript applications on top of your CouchDB database.
+	</p>
+	<p class="slide">
+		<img src="slide.078.png" width="800" height="600" alt="Ubunut One"><br>
+		<strong>Ubuntu One</strong> is using CouchDB to store Contacts, Calendars, and 
+		bookmarks on your computer. With the release of Karmic Kola CouchDB will be
+		installed by default on your computer.
+	</p>
+	<p class="slide"><img src="slide.081.png" width="800" height="600" alt="Other Document-Oriented Database Systems"></p>
+	<p class="slide"><img src="slide.082.png" width="800" height="600" alt="MongoDB"></p>
+	<p class="slide"><img src="slide.083.png" width="800" height="600" alt="Amazon SimpleDB"></p>
+	<p class="slide"><img src="slide.084.png" width="800" height="600" alt="Photo Credits"></p>
+</body>
+</html>

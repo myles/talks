@@ -19,6 +19,7 @@
   * December
     * 9th - [Mercurial](2009/12/09/mercurial/)
   * October
+    * 24 - [CouchDB](2009/10/24/couchdb/)
     * 12 - [So You Want a Personal Web Site?](2009/10/12/so-you-want-a-personal-web-site/)
   * April
     * 21st - [Google App Engine](2009/04/21/google-app-engine/)
