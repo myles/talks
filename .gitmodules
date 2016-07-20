@@ -1,0 +1,15 @@
+[submodule "2015/03/10/jrnl"]
+	path = 2015/03/10/jrnl
+	url = https://github.com/myles/2015-03-10-jrnl
+[submodule "2015/04/14/lesscss"]
+	path = 2015/04/14/lesscss
+	url = https://github.com/myles/2015-04-14-lesscss
+[submodule "2014/09/09/couchdb"]
+	path = 2014/09/09/couchdb
+	url = https://github.com/myles/2014-09-09-couchdb
+[submodule "2015/11/08/take-a-stroll-in-the-bazaar"]
+	path = 2015/11/08/take-a-stroll-in-the-bazaar
+	url = https://github.com/myles/2015-11-08-Take-a-Stroll-in-the-Bazaar
+[submodule "2008/09/09/django/example"]
+	path = 2008/09/09/django/example
+	url = https://github.com/myles/tlug-presentation-2008-09
