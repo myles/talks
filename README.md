@@ -14,6 +14,8 @@
   * April
     * 20th - [XMPP and Python](2010/04/20/xmpp-python/)
 * 2009
+  * December
+    * 9th - [Mercurial](2009/12/09/mercurial/)
   * October
     * 12 - [So You Want a Personal Web Site?](2009/10/12/so-you-want-a-personal-web-site/)
   * April
