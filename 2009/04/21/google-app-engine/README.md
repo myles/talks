@@ -11,3 +11,4 @@ Google App Engine is a platform to building and hosting web applications on Goog
 ## Links
 
 * [Announce Message](https://mail.python.org/pipermail/python-announce-list/2009-April/007373.html)
+* [Tom Low-Shang Blog Post](http://tomlowshang.blogspot.ca/2009/04/google-app-engine.html)
