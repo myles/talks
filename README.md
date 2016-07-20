@@ -10,7 +10,12 @@
 * 2014
   * September
     * 9th - [CouchDB](2014/09/09/couchdb/)
+* 2010
+  * April
+    * 20th - [XMPP and Python](2010/04/20/xmpp-python/)
 * 2009
+  * October
+    * 12 - [So You Want a Personal Web Site?](2009/10/12/so-you-want-a-personal-web-site/)
   * April
     * 21st - [Google App Engine](2009/04/21/google-app-engine/)
 * 2008
