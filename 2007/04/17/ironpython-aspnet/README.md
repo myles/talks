@@ -14,7 +14,5 @@ Microsoft platforms too.
 
 ## Links
 
-* [Announce
-  Message](https://mail.python.org/pipermail/python-announce-list/2007-April/005766.html)
-* [Mike Fletcher's Blog
-  Post](http://blog.vrplumber.com/b/2007/04/17/python-in-a-strange/)
+* [Announce Message](https://mail.python.org/pipermail/python-announce-list/2007-April/005766.html)
+* [Mike Fletcher's Blog Post](http://blog.vrplumber.com/b/2007/04/17/python-in-a-strange/)
