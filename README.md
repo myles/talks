@@ -11,6 +11,8 @@
   * September
     * 9th - [CouchDB](2014/09/09/couchdb/)
 * 2010
+  * July
+    * 14th [HTML5](2010/07/14/html5/)
   * April
     * 20th - [XMPP and Python](2010/04/20/xmpp-python/)
 * 2009
