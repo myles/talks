@@ -24,8 +24,12 @@
   * April
     * 21st - [Google App Engine](2009/04/21/google-app-engine/)
 * 2008
+  * December
+    * 9th - [CouchDB](2008/12/09/couchdb/)
   * September
     * 9th - [Django](2008/09/09/django/)
+  * January
+    * 15th - [CouchDB](2009/01/15/couchdb/)
 * 2007
   * April
     * 17th - [IronPython & ASP.NET](2007/04/17/ironpython-aspnet/)
