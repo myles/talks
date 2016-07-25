@@ -1,4 +1,5 @@
-Date,Name,Link,Git Repo
+|Date|Name|Link|Git Repo|
+
 2015-11-08,Take a Stroll in the Bazaar,https://2015.pycon.ca/en/schedule/69/,https://github.com/myles/2015-11-08-Take-a-Stroll-in-the-Bazaar
 2015-04-14,LessCSS,https://gtalug.org/meeting/2015-04/,https://github.com/myles/2015-04-14-lesscss
 2015-03-10,jrnl,https://gtalug.org/meeting/2015-03/,https://github.com/myles/2015-03-10-jrnl
