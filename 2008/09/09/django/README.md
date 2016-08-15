@@ -13,6 +13,9 @@ Django market itself as a "web framework for perfectionists with deadlines" and
 allows web developers to create complex database-driven websites with a DRY (Do
 not Repeat Yourself) philosophy.
 
-Version 1.0 was released in 3 September, 2008 and has some exciting new
+Version 1.0 was released in 3 September 2008 and has some exciting new
 features.
 
+## Links
+
+* [Meeting Page](https://web.archive.org/web/20130120074325/http://gtalug.org/wiki/Meetings:2008-09) _(Wayback Machine Archive)_
