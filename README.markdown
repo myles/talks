@@ -34,4 +34,4 @@ These are some of the talks I have given:
         * 9th - [**Django**](https://github.com/myles/talks/tree/master/2008/09/09/django) at _GTALUG_
 * 2007
     * May
-        * 17th [**IronPython & ASP.NET](https://github.com/myles/talks/tree/master/2007/04/17/ironpython-aspnet) at _PyGTA_
+        * 17th [**IronPython & ASP.NET**](https://github.com/myles/talks/tree/master/2007/04/17/ironpython-aspnet) at _PyGTA_
