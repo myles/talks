@@ -12,11 +12,6 @@ development platforms. IronPython is a Python implementation, with support in
 the Visual Studio environment, that makes Python a natural development choice on
 Microsoft platforms too.
 
-## Links
-
-* [Announce Message](https://mail.python.org/pipermail/python-announce-list/2007-April/005766.html)
-* [Mike Fletcher's Blog Post](http://blog.vrplumber.com/b/2007/04/17/python-in-a-strange/)
-
 ## Slides
 
 | Slide | Note |
@@ -36,3 +31,7 @@ Microsoft platforms too.
 | ![](slides/PyGTA_Presentation-IronPython_and_ASP.013.png) | |
 | ![](slides/PyGTA_Presentation-IronPython_and_ASP.014.png) | So lets do a demo. |
 
+## Links
+
+* [Announce Message](https://mail.python.org/pipermail/python-announce-list/2007-April/005766.html)
+* [Mike Fletcher's Blog Post](http://blog.vrplumber.com/b/2007/04/17/python-in-a-strange/)
