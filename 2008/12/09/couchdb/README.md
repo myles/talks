@@ -1,8 +1,8 @@
-# Django
+# CouchDB
 
-* **For**: GTALUG
+* **For**: PyGTA
 * **Date**: 9th December 2008
-* **Location**: Galbraith Building, University of Toronto
+* **Location**: LinuxCaffe
 
 ## Description
 
@@ -10,4 +10,5 @@ Apache CouchDB is a document-oriented database written in Erlang. It is not a no
 
 ## Links
 
-* [Meeting Page](https://web.archive.org/web/20130120073704/http://gtalug.org/wiki/Meetings:2008-12) _(Wayback Machine Archive)_
+* [Annouce Message](https://mail.python.org/pipermail/python-announce-list/2009-January/007159.html)
+* [Mike C. Fletcher's Blog Post](https://blog.vrplumber.com/b/2009/01/19/programming-couchdb-with-python/)
