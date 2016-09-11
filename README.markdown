@@ -1,7 +1,11 @@
 # Talks
 
-These are some of the talks I have given:
-
+* 2016
+    * October
+        * 11th - [**Ansible**](https://github.com/myles/2016-10-11-ansible) at [GTALUG](https://gtalug.org/meeting/2016-10/)
+    * September
+        * 21st - [**Chat Bots**](https://github.com/myles/2016-09-21-chat-bots) at _Python Toronto_
+        * 13th - [**PostgresDoc**](https://github.com/myles/2016-09-13-postgresdoc) at [GTALUG](https://gtalug.org/meeting/2016-09/)
 * 2015
     * November
         * 8th - [**Take a Stroll in the Bazaar**](https://github.com/myles/2015-11-08-Take-a-Stroll-in-the-Bazaar) at [PyCon Canada 2016](https://2015.pycon.ca/en/schedule/69/)
