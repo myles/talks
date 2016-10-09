@@ -12,7 +12,7 @@
 	url = https://github.com/myles/2015-11-08-Take-a-Stroll-in-the-Bazaar
 [submodule "2016/09/13/postgresdoc"]
 	path = 2016/09/13/postgresdoc
-	url = https://github.com/myles/2016-09-13-postgresdoc
+	url = https://github.com/myles/2016-09-13-postgresdoc.git
 [submodule "2016/09/21/chat-bots"]
 	path = 2016/09/21/chat-bots
 	url = https://github.com/myles/2016-09-21-chat-bots
