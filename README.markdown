@@ -2,9 +2,9 @@
 
 * 2016
     * October
+        * 19st - [**Chat Bots**](https://github.com/myles/2016-10-19-chat-bots) at _Python Toronto_
         * 11th - [**Ansible**](https://github.com/myles/2016-10-11-ansible) at [GTALUG](https://gtalug.org/meeting/2016-10/)
     * September
-        * 21st - [**Chat Bots**](https://github.com/myles/2016-09-21-chat-bots) at _Python Toronto_
         * 13th - [**PostgresDoc**](https://github.com/myles/2016-09-13-postgresdoc) at [GTALUG](https://gtalug.org/meeting/2016-09/)
 * 2015
     * November
