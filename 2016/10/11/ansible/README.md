@@ -2,10 +2,13 @@
 title: Ansible: Orchestrate Your Infustrature Like Gustav Mahler
 location: George Vari Engineering and Computing Centre at Ryerson University
 date: 2016-10-11
+source: https://github.com/myles/2016-10-11-ansible/tree/master/1-getting-started
 for:
   name: GTALUG
   link: https://gtalug.org/meeting/2016-10/
-source: https://github.com/myles/2016-10-11-ansible/tree/master/1-getting-started
+speaker_deck:
+    url: https://speakerdeck.com/myles/ansible-orchestrate-your-infustrature-like-gustav-mahler
+    embed: bef4b0c822e54707965296077e8a8f44
 ---
 
 # Ansible
