@@ -6,11 +6,7 @@
 
 ## Description
 
-While Python is normally associated with the Free and Open Source communities,
-contractors and developers using it often need to work on Microsoft's
-development platforms. IronPython is a Python implementation, with support in
-the Visual Studio environment, that makes Python a natural development choice on
-Microsoft platforms too.
+While Python is normally associated with the Free and Open Source communities, contractors and developers using it often need to work on Microsoft's development platforms. IronPython is a Python implementation, with support in the Visual Studio environment, that makes Python a natural development choice on Microsoft platforms too.
 
 ## Slides
 
