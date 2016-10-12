@@ -13,6 +13,3 @@
 [submodule "2016/09/21/chat-bots"]
 	path = 2016/09/21/chat-bots
 	url = https://github.com/myles/2016-09-21-chat-bots
-[submodule "2008/09/09/django/example"]
-	path = 2008/09/09/django/example
-	url = https://github.com/myles/tlug-presentation-2008-09

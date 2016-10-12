@@ -1,3 +1,12 @@
+---
+title: Django
+location: Galbraith Building, University of Toronto
+date: 2008-09-09
+example: https://github.com/myles/tlug-presentation-2008-09
+for:
+  name: GTALUG
+---
+
 # Django
 
 * **For**: GTALUG
