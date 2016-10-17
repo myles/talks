@@ -1,5 +1,5 @@
 ---
-title: PostgresDoc: Using Postgres as a Document Oriented Database
+title: "PostgresDoc: Using Postgres as a Document Oriented Database"
 location: George Vari Engineering and Computing Centre at Ryerson University
 date: 2016-09-13
 source: https://github.com/myles/2016-09-13-postgresdoc
