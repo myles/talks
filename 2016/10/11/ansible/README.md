@@ -1,5 +1,5 @@
 ---
-title: Ansible: Orchestrate Your Infustrature Like Gustav Mahler
+title: "Ansible: Orchestrate Your Infustrature Like Gustav Mahler"
 location: George Vari Engineering and Computing Centre at Ryerson University
 date: 2016-10-11
 source: https://github.com/myles/2016-10-11-ansible/tree/master/1-getting-started
