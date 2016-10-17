@@ -11,14 +11,6 @@ speaker_deck:
     embed: bef4b0c822e54707965296077e8a8f44
 ---
 
-# Ansible
-
-* **For**: [GTALUG](https://gtalug.org/meeting/2016-10/)
-* **Date**: 21th October 2016
-* **Location**: George Vari Engineering and Computing Centre at Ryerson University
-
-## Description
-
 Ansible allows you to turn your infrastructure administration into a codebase. Describing all the processes that are necessary for deploying a server with a set of provisioning scrips that can be stored in version control.
 
 Myles Braithwaite will be giving an overview of deploy and configure your infrastructure with Ansible.
