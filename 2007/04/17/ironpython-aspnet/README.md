@@ -1,10 +1,10 @@
-# IronPython & ASP.NET
-
-* **For**: PyGTA
-* **Date**: 17th April 2007
-* **Location**: Linux Caffe
-
-## Description
+---
+title: "IronPython & ASP.NET"
+location: Linux Caffe
+date: 2007-04-17
+for:
+  name: PyGTA
+---
 
 While Python is normally associated with the Free and Open Source communities, contractors and developers using it often need to work on Microsoft's development platforms. IronPython is a Python implementation, with support in the Visual Studio environment, that makes Python a natural development choice on Microsoft platforms too.
 
