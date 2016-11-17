@@ -5,7 +5,7 @@ SOURCE_BRANCH="master"
 TARGET_BRANCH="gh-pages"
 
 function doCompile {
-  python3 ./_pages/build.py
+  python3 $TRAVIS_BUILD_DIR/_pages/build.py
 }
 
 # Pull requests and commits to other branches shouldn't try to deploy, just build to verify
@@ -27,9 +27,6 @@ cd out
 git checkout $TARGET_BRANCH || git checkout --orphan $TARGET_BRANCH
 cd ..
 
-# Clean out existing contents
-rm -rf out/**/* || exit 0
-
 # Run our compile script
 doCompile
 
@@ -46,7 +43,7 @@ fi
 
 # Commit the "changes", i.e. the new version.
 # The delta will show diffs between new and old versions.
-find . -name "index.html" | xargs git add
+find $TRAVIS_BUILD_DIR -name "index.html" | xargs git add
 git commit -m "Deploy to GitHub Pages: ${SHA}"
 
 # Get the deploy key by using Travis's stored variables to decrypt deploy_key.enc
@@ -54,10 +51,10 @@ ENCRYPTED_KEY_VAR="encrypted_${ENCRYPTION_LABEL}_key"
 ENCRYPTED_IV_VAR="encrypted_${ENCRYPTION_LABEL}_iv"
 ENCRYPTED_KEY=${!ENCRYPTED_KEY_VAR}
 ENCRYPTED_IV=${!ENCRYPTED_IV_VAR}
-openssl aes-256-cbc -K $ENCRYPTED_KEY -iv $ENCRYPTED_IV -in ./_pages/deploy_key.enc -out ./_pages/deploy_key -d
-chmod 600 ./_pages/deploy_key
+openssl aes-256-cbc -K $ENCRYPTED_KEY -iv $ENCRYPTED_IV -in $TRAVIS_BUILD_DIR/_pages/deploy_key.enc -out $TRAVIS_BUILD_DIR/_pages/deploy_key -d
+chmod 600 $TRAVIS_BUILD_DIR/_pages/deploy_key
 eval `ssh-agent -s`
-ssh-add ./_pages/deploy_key
+ssh-add $TRAVIS_BUILD_DIR/_pages/deploy_key
 
 # Now that we're all set up, we can push.
 git push $SSH_REPO $TARGET_BRANCH
