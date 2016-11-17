@@ -1,0 +1,12 @@
+language: python
+python:
+  - 3.5
+
+before_script:
+  - pip install pyyaml markdown
+script: bash ./_pages/deploy.sh
+
+env:
+  global:
+  - ENCRYPTION_LABEL: dc0166bffc57
+  - COMMIT_AUTHOR_EMAIL: me@mylesbraithwaite.com
