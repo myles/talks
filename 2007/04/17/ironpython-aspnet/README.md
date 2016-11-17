@@ -1,5 +1,5 @@
 ---
-title: "IronPython & ASP.NET"
+title: IronPython and ASP.NET
 location: Linux Caffe
 date: 2007-04-17
 for:
@@ -10,8 +10,6 @@ While Python is normally associated with the Free and Open Source communities, c
 
 ## Slides
 
-| Slide | Note |
-| ----- | ---- |
 | ![](slides/PyGTA_Presentation-IronPython_and_ASP.001.png) | |
 | ![](slides/PyGTA_Presentation-IronPython_and_ASP.002.png) | |
 | ![](slides/PyGTA_Presentation-IronPython_and_ASP.003.png) | I am currently a student at George Brown College and am Majoring in Computer Programming Analysis. I also work at an Accounting Firm in Toronto as a System Administrator. We are a cross platform shop and anything that is cross platform is incredibly important to use. |

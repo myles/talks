@@ -43,13 +43,14 @@ def main():
     current_dir = join(dirname(realpath(__file__)))
 
     chdir(current_dir)
-    talk_files = iglob('../2016/**/README.md', recursive=True)
+    talk_files = iglob('../2*/**/README.md', recursive=True)
 
     with codecs.open(join(current_dir, 'template.html'), mode='r',
                      encoding='utf-8') as fobj:
         tpl = fobj.read()
 
     for talk_file_path in talk_files:
+        print(talk_file_path)
         talk = get_talk_contents(talk_file_path)
         render_talk_page(talk, tpl, talk_file_path)
 
