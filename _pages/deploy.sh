@@ -5,7 +5,7 @@ SOURCE_BRANCH="master"
 TARGET_BRANCH="gh-pages"
 
 function doCompile {
-  python3 ./build.py
+  python3 ./_pages/build.py
 }
 
 # Pull requests and commits to other branches shouldn't try to deploy, just build to verify
