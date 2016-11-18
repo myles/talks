@@ -1,21 +1,22 @@
 # Talks
 
 * 2016
+    * November
+        * 13th - [**Five Little Monkeys**](2016/11/13/five-little-monkeys) at PyCon Canada 2016
     * October
-        * 19st - [**Chat Bots**](https://github.com/myles/2016-10-19-chat-bots) at _Python Toronto_
         * 11th - [**Ansible**](2016/10/11/ansible) at [GTALUG](https://gtalug.org/meeting/2016-10/)
     * September
         * 13th - [**PostgresDoc**](2016/09/13/postgresdoc) at [GTALUG](https://gtalug.org/meeting/2016-09/)
 * 2015
     * November
-        * 8th - [**Take a Stroll in the Bazaar**](https://github.com/myles/2015-11-08-Take-a-Stroll-in-the-Bazaar) at [PyCon Canada 2016](https://2015.pycon.ca/en/schedule/69/)
+        * 8th - [**Take a Stroll in the Bazaar**](2015/11/08/take-a-stroll-in-the-bazaar) at [PyCon Canada 2016](https://2015.pycon.ca/en/schedule/69/)
     * April
-        * 14th - [**LessCSS**](https://github.com/myles/2015-04-14-lesscss) at [GTALUG](https://gtalug.org/meeting/2015-04/)
+        * 14th - [**LessCSS**](2015/04/14/lesscss) at [GTALUG](https://gtalug.org/meeting/2015-04/)
     * March
-        * 10th - [**jrnl**](https://github.com/myles/2015-03-10-jrnl) at [GTALUG](https://gtalug.org/meeting/2015-03/)
+        * 10th - [**jrnl**](2015/03/10/jrnl) at [GTALUG](https://gtalug.org/meeting/2015-03/)
 * 2014
     * September
-        * 9th - [**CouchDB**](https://github.com/myles/2014-09-09-couchdb) at [GTALUG](https://gtalug.org/meeting/2014-09/)
+        * 9th - [**CouchDB**](2014/09/09/couchdb) at [GTALUG](https://gtalug.org/meeting/2014-09/)
 * 2010
     * July
         * 14th - [**HTML5**](2010/07/14/html5) at [GTALUG](https://gtalug.org/meeting/2010-07/)
