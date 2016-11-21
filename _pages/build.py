@@ -9,12 +9,13 @@ Requirments:
 """
 
 import re
-import yaml
 import codecs
 from os import chdir
 from glob import iglob
 from os.path import dirname, realpath, join
 
+import yaml
+from jinja2 import Template
 from markdown import markdown
 
 readme_regex = re.compile(r'(?s)(---(?P<yaml>.*)---)(?P<markdown>.*)')
@@ -33,10 +34,12 @@ def get_talk_contents(path):
     return talk
 
 
-def render_talk_page(talk, template, path):
+def render_talk_page(talk, tpl_contents, path):
+    template = Template(tpl_contents)
+
     with codecs.open(join(dirname(path), 'index.html'), mode='w',
                      encoding='utf-8') as fobj:
-        fobj.write(template.format(**talk))
+        fobj.write(template.render(**talk))
 
 
 def main():
@@ -45,22 +48,22 @@ def main():
     chdir(current_dir)
     talk_files = iglob('../2*/**/README.md', recursive=True)
 
-    with codecs.open(join(current_dir, 'template.html'), mode='r',
-                     encoding='utf-8') as fobj:
-        tpl = fobj.read()
-
     index_path = join(current_dir, '../README.md')
     index = {'title': 'Myles\' Talks'}
 
     with open(index_path, 'r') as fobj:
         index['description'] = markdown(fobj.read())
 
-    render_talk_page(index, tpl, index_path)
+    with codecs.open(join(current_dir, 'template.html'), mode='r',
+                     encoding='utf-8') as fobj:
+        tpl_contents = fobj.read()
+
+    render_talk_page(index, tpl_contents, index_path)
 
     for talk_file_path in talk_files:
         print(talk_file_path)
         talk = get_talk_contents(talk_file_path)
-        render_talk_page(talk, tpl, talk_file_path)
+        render_talk_page(talk, tpl_contents, talk_file_path)
 
 
 if __name__ == '__main__':

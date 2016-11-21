@@ -3,7 +3,7 @@ python:
   - 3.5
 
 before_script:
-  - pip install pyyaml markdown
+  - pip install pyyaml markdown Jinja2
 script: bash ./_pages/deploy.sh
 
 env:
