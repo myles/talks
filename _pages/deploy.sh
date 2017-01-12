@@ -23,7 +23,7 @@ SHA=`git rev-parse --verify HEAD`
 # Run our compile script
 doCompile
 
-# Switch to the gh-pages branch or creating it if it doesn't exist
+# Switch to the gh-pages branch
 git fetch
 git checkout -b $TARGET_BRANCH origin/$TARGET_BRANCH
 
