@@ -4,7 +4,7 @@ set -e # Exit with nonzero exit code if anything fails
 SOURCE_BRANCH="master"
 TARGET_BRANCH="gh-pages"
 
-TEMP_DIRECTORY="/tmp/build"
+OUTPUT_DIRECTORY="/tmp/build"
 
 function doCompile {
   python3 $TRAVIS_BUILD_DIR/_pages/build.py $OUTPUT_DIRECTORY
