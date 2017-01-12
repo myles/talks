@@ -35,10 +35,10 @@ def get_talk_contents(path):
 
 
 def render_talk_page(talk, tpl_contents, path):
+    output = join(dirname(path), 'index.html')
     template = Template(tpl_contents)
 
-    with codecs.open(join(dirname(path), 'index.html'), mode='w',
-                     encoding='utf-8') as fobj:
+    with codecs.open(output, mode='w', encoding='utf-8') as fobj:
         fobj.write(template.render(**talk))
 
 
@@ -49,7 +49,7 @@ def main():
     talk_files = iglob('2*/**/README.md', recursive=True)
 
     index_path = join(root_dir, 'README.md')
-    index = {'title': 'Myles\' Talks'}
+    index = {'title': "Myles\' Talks"}
 
     with open(index_path, 'r') as fobj:
         index['description'] = markdown(fobj.read())
@@ -61,7 +61,6 @@ def main():
     render_talk_page(index, tpl_contents, index_path)
 
     for talk_file_path in talk_files:
-        print(talk_file_path)
         talk = get_talk_contents(talk_file_path)
         render_talk_page(talk, tpl_contents, talk_file_path)
 
