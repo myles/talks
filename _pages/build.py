@@ -10,9 +10,9 @@ Requirments:
 
 import re
 import codecs
-from os import chdir
+from os import chdir, pardir
 from glob import iglob
-from os.path import dirname, realpath, join
+from os.path import abspath, dirname, join, realpath
 
 import yaml
 from jinja2 import Template
@@ -43,18 +43,18 @@ def render_talk_page(talk, tpl_contents, path):
 
 
 def main():
-    current_dir = join(dirname(realpath(__file__)))
+    root_dir = join(dirname(realpath(__file__)), pardir)
 
-    chdir(current_dir)
-    talk_files = iglob('../2*/**/README.md', recursive=True)
+    chdir(root_dir)
+    talk_files = iglob('2*/**/README.md', recursive=True)
 
-    index_path = join(current_dir, '../README.md')
+    index_path = join(root_dir, 'README.md')
     index = {'title': 'Myles\' Talks'}
 
     with open(index_path, 'r') as fobj:
         index['description'] = markdown(fobj.read())
 
-    with codecs.open(join(current_dir, 'template.html'), mode='r',
+    with codecs.open(join(root_dir, '_pages/template.html'), mode='r',
                      encoding='utf-8') as fobj:
         tpl_contents = fobj.read()
 
