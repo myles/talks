@@ -39,6 +39,7 @@ git config user.email "$COMMIT_AUTHOR_EMAIL"
 # The delta will show diffs between new and old versions.
 find $TRAVIS_BUILD_DIR -name "index.html" | xargs git add
 find $TRAVIS_BUILD_DIR -name "presentation.pdf" | xargs git add
+find $TRAVIS_BUILD_DIR -name "*.png" | xargs git add
 git commit -m "Deploy to GitHub Pages: ${SHA}"
 
 # Get the deploy key by using Travis's stored variables to decrypt deploy_key.enc
