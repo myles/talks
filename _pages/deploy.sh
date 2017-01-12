@@ -23,7 +23,8 @@ SHA=`git rev-parse --verify HEAD`
 # Run our compile script
 doCompile
 
-# Switch to the gh-pages branch
+# Switch to the gh-pages branch or creating it if it doesn't exist
+git fetch
 git checkout $TARGET_BRANCH || git checkout --orphan $TARGET_BRANCH
 
 # Now let's go have some fun with the cloned repo
