@@ -59,7 +59,8 @@ def main(output_directory):
                      encoding='utf-8') as fobj:
         tpl_contents = fobj.read()
 
-    render_talk_page(index, tpl_contents, index_path)
+    index_output_path = join(output_directory, 'index.html')
+    render_talk_page(index, tpl_contents, index_output_path)
 
     for talk_file_path in talk_files:
         output = join(output_directory, talk_file_path)
