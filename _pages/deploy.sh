@@ -4,8 +4,10 @@ set -e # Exit with nonzero exit code if anything fails
 SOURCE_BRANCH="master"
 TARGET_BRANCH="gh-pages"
 
+TEMP_DIRECTORY="/tmp/build"
+
 function doCompile {
-  python3 $TRAVIS_BUILD_DIR/_pages/build.py
+  python3 $TRAVIS_BUILD_DIR/_pages/build.py $OUTPUT_DIRECTORY
 }
 
 # Pull requests and commits to other branches shouldn't try to deploy, just build to verify
@@ -20,14 +22,18 @@ REPO=`git config remote.origin.url`
 SSH_REPO=${REPO/https:\/\/github.com\//git@github.com:}
 SHA=`git rev-parse --verify HEAD`
 
+# Clone the existing gh-pages for this repo into out/
+# Create a new empty branch if gh-pages doesn't exist yet (should only happen on first deply)
+git clone $REPO $OUTPUT_DIRECTORY
+cd $OUTPUT_DIRECTORY
+git checkout $TARGET_BRANCH || git checkout --orphan $TARGET_BRANCH
+cd $TRAVIS_BUILD_DIR
+
 # Run our compile script
 doCompile
 
-# Switch to the gh-pages branch
-git fetch
-git checkout -b $TARGET_BRANCH origin/$TARGET_BRANCH
-
 # Now let's go have some fun with the cloned repo
+cd $OUTPUT_DIRECTORY
 git config user.name "Travis CI"
 git config user.email "$COMMIT_AUTHOR_EMAIL"
 
@@ -39,9 +45,9 @@ fi
 
 # Commit the "changes", i.e. the new version.
 # The delta will show diffs between new and old versions.
-find $TRAVIS_BUILD_DIR -name "index.html" | xargs git add
-find $TRAVIS_BUILD_DIR -name "presentation.pdf" | xargs git add
-find $TRAVIS_BUILD_DIR -name "*.png" | xargs git add
+find $OUTPUT_DIRECTORY -name "index.html" | xargs git add
+find $OUTPUT_DIRECTORY -name "presentation.pdf" | xargs git add
+find $OUTPUT_DIRECTORY -name "*.png" | xargs git add
 git commit -m "Deploy to GitHub Pages: ${SHA}"
 
 # Get the deploy key by using Travis's stored variables to decrypt deploy_key.enc

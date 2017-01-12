@@ -10,6 +10,7 @@ Requirments:
 
 import re
 import codecs
+import argparse
 from os import chdir, pardir
 from glob import iglob
 from os.path import abspath, dirname, join, realpath
@@ -42,7 +43,7 @@ def render_talk_page(talk, tpl_contents, path):
         fobj.write(template.render(**talk))
 
 
-def main():
+def main(output_directory):
     root_dir = join(dirname(realpath(__file__)), pardir)
 
     chdir(root_dir)
@@ -61,9 +62,14 @@ def main():
     render_talk_page(index, tpl_contents, index_path)
 
     for talk_file_path in talk_files:
+        output = join(output_directory, talk_file_path)
         talk = get_talk_contents(talk_file_path)
-        render_talk_page(talk, tpl_contents, talk_file_path)
+        render_talk_page(talk, tpl_contents, output)
 
 
 if __name__ == '__main__':
-    main()
+    parser = argparse.ArgumentParser()
+    parser.add_argument("output_directory")
+    args = parser.parse_args()
+
+    main(args.output_directory)
