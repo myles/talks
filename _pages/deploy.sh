@@ -25,7 +25,7 @@ doCompile
 
 # Switch to the gh-pages branch or creating it if it doesn't exist
 git fetch
-git checkout $TARGET_BRANCH || git checkout --orphan $TARGET_BRANCH
+git checkout -b $TARGET_BRANCH origin/$TARGET_BRANCH
 
 # Now let's go have some fun with the cloned repo
 git config user.name "Travis CI"
