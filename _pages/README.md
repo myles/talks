@@ -1,6 +1,6 @@
 # Myles' Talks Build and Deploy Script
 
-This directory contains scripts to build and deploy Myles' Talks to <https://myles.github.io/myles/>.
+This directory contains scripts to build and deploy Myles' Talks to <https://myles.github.io/talks/>.
 
 ## Contents
 
