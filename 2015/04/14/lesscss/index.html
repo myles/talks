@@ -7,16 +7,114 @@
 
         <title>lesscss</title>
 
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" />
+
+        <style media="screen">
+            body {
+                padding-top: 1.5rem;
+                padding-bottom: 1.5rem;
+            }
+
+            .header,
+            .content,
+            .footer {
+                padding-right: 1rem;
+                padding-left: 1rem;
+            }
+
+            .header {
+                padding-bottom: 1rem;
+                border-bottom: .05rem solid #e5e5e5;
+            }
+
+            .header h3 {
+                margin-top: 0;
+                margin-bottom: 0;
+                line-height: 3rem;
+            }
+
+            .footer {
+                padding-top: 1.5rem;
+                color: #777;
+                border-top: .05rem solid #e5e5e5;
+            }
+
+            @media (min-width: 48em) {
+                .container {
+                    max-width: 46rem;
+                }
+            }
+
+            .container-narror > hr {
+                margin: 2rem 0;
+            }
+
+            .jumbotron {
+                text-align: center;
+                border-bottom: .05rem solid #e5e5e5;
+            }
+
+            .jumbotron .btn {
+                padding: .75rem 1.5rem;
+                font-size: 1.5rem;
+            }
+
+            .content {
+                margin: 3rem 0;
+            }
+
+            .content p + h4 {
+                margin-top: 1.5rem;
+            }
+
+            @media screen and (min-width: 48em) {
+                .header,
+                .content,
+                .footer {
+                    padding-right: 0;
+                    padding-left: 0;
+                }
+
+                .header {
+                    margin-bottom: 2rem;
+                }
+
+                .jumbotron {
+                    border-bottom: 0;
+                }
+            }
+        </style>
     </head>
     <body>
         <div class="container">
-            <div class="page-title">
-                <h1>lesscss</h1>
+            <div class="header clearfix">
+                <nav>
+                    <ul class="nav nav-pills float-xs-right">
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://mylesb.ca/">Homepage</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://mylesbraithwaite.com/">Blog</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <h3 class="text-muted">Myles' Talks</h3>
             </div>
 
-            <p>LessCSS extends the CSS language to make it actually useable by adding features like variables, mixins, functions, and a bunch of other techniques that allow you to make your stylesheets more maintainable, themeable, and extendible.</p>
+            <div class="jumbotron">
+                <h1 class="display-3">lesscss</h1>
+            </div>
+
+            <div class="content">
+                <p>LessCSS extends the CSS language to make it actually useable by adding features like variables, mixins, functions, and a bunch of other techniques that allow you to make your stylesheets more maintainable, themeable, and extendible.</p>
+
+                
+            </div>
+
+            <footer class="footer">
+                <p>Made by <a href="https://mylesb.ca/">Myles Braithwaite</a> with (heart) in Toronto.</p>
+            </footer>
         </div>
     </body>
 </html>
