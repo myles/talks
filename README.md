@@ -1,5 +1,9 @@
 # Talks
 
+* 2017
+  * January
+    * 11th - [**Chat Bots**](2017/01/11/chat-bots) at Python Toronto
+
 * 2016
     * November
         * 13th - [**Five Little Monkeys**](2016/11/13/five-little-monkeys) at PyCon Canada 2016
