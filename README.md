@@ -2,7 +2,7 @@
 
 * 2017
   * January
-    * 11th - [**Chat Bots**](2016/01/11/chat-bots) at Python Toronto
+    * 11th - [**Chat Bots**](2017/01/11/chat-bots) at Python Toronto
 
 * 2016
     * November
