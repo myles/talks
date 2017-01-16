@@ -13,7 +13,7 @@ import codecs
 import argparse
 from os import chdir, pardir
 from glob import iglob
-from os.path import abspath, dirname, join, realpath
+from os.path import dirname, join, realpath
 
 import yaml
 from jinja2 import Template
