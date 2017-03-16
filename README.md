@@ -1,6 +1,8 @@
 # Talks
 
 * 2017
+    * March
+        * 15th - [**Let's Encrypt**](2017/03/15/lets-encrypt) at GTALUG
     * January
         * 11th - [**Chat Bots**](2017/01/11/chat-bots) at Python Toronto
 * 2016
